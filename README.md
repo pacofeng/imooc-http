@@ -1,3 +1,5 @@
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/Screen%20Shot%202020-05-26%20at%203.37.17%20PM.png)
+
 ## 五层Network Layers
 * Application: SNMP, HTTP, FTP
 * Transport: TCP, UDP, port numbers
@@ -26,10 +28,10 @@
 
 ## TCP三次握手
 防止服务端开启无用链接，避免资源浪费
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/CA82BCC7-2C3F-44E4-9811-DB919D03152C.png)
 
 
-
-HTTP报文格式
+## HTTP报文格式
 * 起始行：request line例如 GET /index.html HTTP/1.1。
     * 请求方法: GET, POST, HEAD, PUT, DELETE, OPTIONS, TRACE, CONNECT。
     * URL字段
@@ -37,9 +39,10 @@ HTTP报文格式
 * 头： header
 * 空行
 * 数据：request body
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/Screen%20Shot%202020-05-26%20at%204.30.41%20PM.png)
 
 
-CORS: Cross-origin resource sharing
+## CORS: Cross-origin resource sharing
 请求成功发送到服务器，但是被浏览器拦截了，两种方法实现跨域
 * Access-Control-Allow-Origin
 * JSONP: 浏览器允许src实现跨域
@@ -59,7 +62,7 @@ response.writeHead(200, {
 <script src="http://127.0.0.1:8777/"></script>
 ```
 
-跨域其他限制：
+## 跨域其他限制：
 * method只能是
     * get
     * post
@@ -72,7 +75,7 @@ response.writeHead(200, {
 
 
 
-缓存Cache-Control
+## 缓存Cache-Control
 * 缓存期限
     * max-age浏览器缓存
     * s-maxage代理服务器缓存
@@ -94,8 +97,7 @@ response.writeHead(200, {
 解决：在资源名字后面加hash，资源改变hash就改变
 
 ## 缓存流程：
-
-
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/34A0FFB0-F8BC-4FDD-95AB-2BE61CC5E985.png)
 
 
 
@@ -211,7 +213,7 @@ response.writeHead(200, {
 ```
 
 CSP Report样例
-
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/40DBE60E-FBF6-4F7F-8341-0609B4AADC44.png)
 
 
 ## 代理缓存
@@ -232,8 +234,7 @@ response.writeHead(200, {
 3. 客户端用public key生成Random 3 (预主秘钥)，再用public key加密预主秘钥，发送到服务端
 4. 服务端用private key解密预主秘钥
 5. 两边用Cipher Siute加密三个Random，生成主秘钥session key来加密和解密数据
-
-
+![Test Image 1](https://github.com/pacofeng/http/blob/master/img/FBB5785B-231B-47CA-9C9A-1738BD51B279.png)
 
 
 ## HTTP 2:
