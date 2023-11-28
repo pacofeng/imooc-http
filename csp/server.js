@@ -9,7 +9,7 @@ http
       const html = fs.readFileSync("test.html", "utf8");
       response.writeHead(200, {
         "Content-Type": "text/html",
-        // 'Content-Security-Policy': 'script-src \'self\'; form-action \'self\'; report-uri /report'
+        // //'Content-Security-Policy': 'script-src \'self\'; form-action \'self\'; report-uri /report'
       });
       response.end(html);
     } else {
